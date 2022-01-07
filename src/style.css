@@ -1,0 +1,363 @@
+:root {
+    --paragraph-color: #4F4F4F;
+    --light-gray: #828282;
+    --input-color: #BDBDBD;
+    --input-background: #F2F2F2;
+    --button-gray-background: #E0E0E0;
+    --button-blue-background: #2D9CDB;
+    --black-background: #100E1D;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #333333;
+    font-family: 'Poppins', sans-serif;
+    font-size: 500;
+}
+
+#container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+/* style header navigation */
+header {
+    display: flex;
+    align-items: center;
+}
+
+header .heading {
+    font-family: 'Heebo', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    flex-grow: 1;
+}
+
+header ul {
+    font-size: 24px;
+    list-style: none;
+    display: flex;
+    min-width: 700px;
+    justify-content: space-between;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* style home section */
+#home .title {
+    width: 50%;
+    position: relative;
+    left: 200px;
+}
+
+#home .title-question {
+    color: #2D9CDB;
+}
+
+#home .title-content {
+    font-size: 48px;
+}
+
+#home img {
+    border-radius: 18px;
+    width: 100%;
+}
+
+#home .story-card {
+    position: relative;
+    left: 200px;
+    width: 40%;
+}
+
+#home .story-title {
+    font-size: 48px;
+}
+
+#home .story-content {
+    font-size: 18px;
+    color: var(--paragraph-color);
+}
+
+#home .story-contact {
+    font-size: 14px;
+    color: var(--light-gray);
+}
+
+.input {
+    background-color: var(--input-background);
+    width: 80%;
+    border-radius: 12px;
+
+    position: relative;
+}
+
+input {
+    height: 54px;
+    border: none;
+    background: transparent;
+    outline: none;
+
+    width: 70%;
+    padding: 0 10px;
+}
+
+.inputbutton {
+    height: 54px;
+    width: 20%;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--button-blue-background);
+    color: var(--input-background);
+
+    position: absolute;
+    right: 0;
+}
+
+/* style services section */
+#services .title {
+    font-size: 36px;
+    width: 30%;
+}
+
+#services .cards {
+    display: flex;
+    gap: 10px;
+}
+
+#services .cards .card {
+    padding: 20px;
+}
+
+#services .cards .card:hover {
+    box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+    cursor: pointer;
+    border-radius: 24px;
+}
+
+.card .material-icons {
+    width: 67px;
+    height: 67px;
+    border-radius: 16px;
+
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+
+.ux-design-service .material-icons {
+    background: #2D9CDB;
+}
+
+.front-end-service .material-icons {
+    background: #27AE60;
+}
+
+.back-end-service .material-icons {
+    background: #EB5757;
+}
+
+.card .card-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card button {
+    background: var(--button-gray-background);
+    border: none;
+    border-radius: 12px;
+    padding: 9px 12px;
+    color: var(--light-gray);
+
+    transition: all 0.3s ease-in;
+}
+
+.card:hover button {
+    background: var(--button-blue-background);
+    color: white;
+}
+
+/* style our work section */
+#ourwork {
+    position: relative;
+}
+
+#ourwork .title {
+    font-size: 36px;
+    width: 40%;
+}
+
+#ourwork .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    row-gap: 50px;
+}
+
+#ourwork .work-card {
+    padding: 10px 0px;
+}
+
+#ourwork img {
+    border-radius: 12px;
+    width: 100%;
+}
+
+#ourwork .card-type {
+    color: var(--light-gray);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#ourwork .card-title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.smarthome, .booking {
+    position: relative;
+    top: 100px;
+}
+
+#ourwork .seemore {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    color: var(--button-blue-background);
+}
+
+#ourwork a {
+    color: var(--button-blue-background);
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* style clients section*/
+#clients {
+    margin-top: 100px;
+}
+
+#clients .intro {
+    color: #EB5757;
+}
+
+#clients .title {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+#clients .content {
+    font-weight: 400;
+}
+
+#clients .client-description {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    align-items: center;
+}
+
+.client-info {
+    grid-column: 1 / 4;
+}
+
+.client-photos {
+    grid-column: 5/11;
+    display: flex;
+}
+
+.client-photos img {
+    border-radius: 24px;
+    width: 100%;
+}
+
+.client-photos .first-photo {
+    height: 50%;
+    position: relative;
+    top: 100px;
+    margin-right: 10px;
+    flex: 1;
+}
+
+.client-photos .photos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.recommendation {
+    font-size: 36px;
+    width: 90%;
+}
+
+.client {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.client img {
+    height: 100px;
+    border-radius: 12px;
+}
+
+.client .name {
+    font-size: 24px;
+}
+
+.client .client-title {
+    font-size: 18px;
+    color: var(--light-gray);
+}
+
+/* style contact section */
+#contact {
+    background: var(--black-background);
+    color: var(--input-background);
+}
+
+.contact-container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1500px;
+    justify-content: space-around;
+    padding: 50px 0px;
+}
+
+#contact ul {
+    list-style: none;
+}
+
+#contact ul a {
+    color: var(--input-background);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#contact .edie .name {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+#contact .edie img {
+    cursor: pointer;
+}
+
+#contact .contact-input {
+    background-color: var(--input-background);
+    width: 120%;
+    border-radius: 12px;
+
+    position: relative;
+}
+
+/*example: https://edie-homepage-in-react.netlify.app/*/
