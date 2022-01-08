@@ -52,11 +52,16 @@ header a {
     color: inherit;
 }
 
+header .mobile-nav {
+    display: none;
+}
+
 /* style home section */
 #home .title {
     width: 50%;
     position: relative;
     left: 200px;
+    margin-bottom: 20px;
 }
 
 #home .title-question {
@@ -76,6 +81,7 @@ header a {
     position: relative;
     left: 200px;
     width: 40%;
+    margin-top: 20px;
 }
 
 #home .story-title {
@@ -263,6 +269,7 @@ input {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     align-items: center;
+    margin-bottom: 100px;
 }
 
 .client-info {
@@ -352,12 +359,129 @@ input {
     cursor: pointer;
 }
 
+#contact .question {
+    font-size: 14px;
+}
+
 #contact .contact-input {
     background-color: var(--input-background);
     width: 120%;
     border-radius: 12px;
 
     position: relative;
+}
+
+#home, #services, #ourwork, #clients {
+    padding: 50px 0px;
+}
+
+/* style for footer */
+footer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    align-self: flex-end;
+    justify-self: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer .created-by {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+footer .author {
+    font-weight: bold;
+    color: #BDBDBD;
+}
+
+@media screen and (max-width:1024px) {
+    header ul {
+        min-width: 600px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    header ul {
+       display: none;
+    }
+
+    header .mobile-nav {
+        display: block;
+    }
+
+    #home .title, #home .story-card {
+        width: 80%;
+        left: 20px;
+    }
+
+    #services .title {
+        width: 80%;
+    }
+
+    #services .cards {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #ourwork .cards {
+        display: block;
+    }
+
+    .smarthome, .booking {
+        position: static;
+    }
+
+    #clients .client-description {
+        display: block;
+    }
+
+    #clients .client-info {
+        margin-bottom: 20px;
+    }
+
+    .contact-container {
+        display: block;
+    }
+
+    .edie {
+        padding-left: 40px;
+        margin-bottom: 20px;
+    }
+
+    .contactus {
+        padding-left: 40px;
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width:425px) {
+    header ul {
+       display: none;
+    }
+
+    #home .title, #home .story-card {
+        width: 100%;
+    }
+
+    #services .title {
+        width: 100%;
+    }
+
+    #services .cards {
+        width: 100%;
+    }
+
+    #ourwork .title {
+        width: 100%;
+    }
+
+    .contactus {
+        padding-left: 40px;
+        width: 80%;
+    }
 }
 
 /*example: https://edie-homepage-in-react.netlify.app/*/
