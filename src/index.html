@@ -13,6 +13,31 @@
     <title>Edie Homepage</title>
 </head>
 <body>
+    <div class="mobile-navigation">
+        <div class="close-mobile-nav">
+            <span class="material-icons">
+                menu_open
+                </span>
+        </div>
+        <ul>
+            <li>
+                <a href="#home" onclick="closeMobileNavWithoutAnimation()">Home</a>
+            </li>
+            <li>
+                <a href="#services" onclick="closeMobileNavWithoutAnimation()">Services</a>
+            </li>
+            <li>
+                <a href="#ourwork" onclick="closeMobileNavWithoutAnimation()">Our Works</a>
+            </li>
+            <li>
+                <a href="#clients" onclick="closeMobileNavWithoutAnimation()">Clients</a>
+            </li>
+            <li>
+                <a href="#contact" onclick="closeMobileNavWithoutAnimation()">Contact</a>
+            </li>
+        </ul>
+    </div>
+    
     <div id="container">
         <header>
             <div class="heading">Edie</div>
@@ -35,14 +60,14 @@
                     </li>
                 </ul>
             </nav>
-
-            <div class="mobile-nav">
+            
+            <div class="open-mobile-nav">
                 <span class="material-icons">
                     menu
-                    </span>
+                </span>
             </div>
         </header>
-    
+        
         <main>
             <div id="home">
                 <div class="title">
@@ -62,39 +87,39 @@
                     </div>
                 </div>
             </div>
-
+            
             <div id="services">
                 <div class="title">We offer high demand services</div>
                 <div class="cards">
                     <div class="ux-design-service card">
                         <span class="material-icons">
                             edit
-                            </span>
+                        </span>
                         <div class="card-title">UI/UX Design</div>
                         <div class="card-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</div>
                         <button>Get started</button>
                     </div>
-    
+                    
                     <div class="front-end-service card">
                         <span class="material-icons">
                             code
-                            </span>
+                        </span>
                         <div class="card-title">Front End</div>
                         <div class="card-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</div>
                         <button>Get started</button>
                     </div>
-    
+                    
                     <div class="back-end-service card">
                         <span class="material-icons">
                             list
-                            </span>
+                        </span>
                         <div class="card-title">Back End</div>
                         <div class="card-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</div>
                         <button>Get started</button>
                     </div>
                 </div>
             </div>
-
+            
             <div id="ourwork">
                 <div class="title">Good design means good business</div>
                 <div class="cards">
@@ -123,10 +148,10 @@
                     <a href="">see more</a>
                     <span class="material-icons">
                         arrow_right_alt
-                        </span>
+                    </span>
                 </div>
             </div>
-
+            
             <div id="clients">
                 <div class="client-description">
                     <div class="client-info">
@@ -145,7 +170,7 @@
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="client-recommendation">
                     <div class="recommendation">“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”    </div>
                     <div class="client">
@@ -178,14 +203,14 @@
                     <a href="#contact">Contact</a>
                 </li>
             </ul>
-    
+            
             <div class="edie">
                 <div class="name">Edie</div>
                 <img src="./resources/instagram.svg" alt="">
                 <img src="./resources/linkedin.svg" alt="">
                 <img src="./resources/twitter.svg" alt="">
             </div>
-    
+            
             <div class="contactus">
                 <div class="question">Want us to contact you?</div>
                 <div class="contact-input">
@@ -194,12 +219,13 @@
                 </div>
             </div>
         </div>
-
+        
         <footer>
             <div class="created-by">created by <a class="author" href="https://github.com/LiXin2014">@LiXin2014</a> -
                 devChallenges.io</div>
         </footer>
     </div>
-
+    
+    <script src="./script.js"></script>
 </body>
 </html>

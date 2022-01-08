@@ -52,7 +52,7 @@ header a {
     color: inherit;
 }
 
-header .mobile-nav {
+header .open-mobile-nav {
     display: none;
 }
 
@@ -91,6 +91,7 @@ header .mobile-nav {
 #home .story-content {
     font-size: 18px;
     color: var(--paragraph-color);
+    margin: 30px 0px;
 }
 
 #home .story-contact {
@@ -395,6 +396,39 @@ footer .author {
     color: #BDBDBD;
 }
 
+.mobile-navigation {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--black-background);
+    color: var(--input-background);
+
+    position: absolute;
+    right: -100vw;
+    z-index: 1;
+}
+
+.mobile-navigation .close-mobile-nav {
+    position: absolute;
+    right: 50px;
+    top: 60px;
+}
+
+.mobile-navigation ul {
+    height: 100%;
+    font-size: 24px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.mobile-navigation a {
+    text-decoration: none;
+    color: inherit;
+}
+
 @media screen and (max-width:1024px) {
     header ul {
         min-width: 600px;
@@ -406,7 +440,7 @@ footer .author {
        display: none;
     }
 
-    header .mobile-nav {
+    header .open-mobile-nav {
         display: block;
     }
 
@@ -423,6 +457,14 @@ footer .author {
         display: block;
         width: 70%;
         margin: 0 auto;
+    }
+    
+    #services .card {
+        margin: 30px 0px;
+    }
+
+    #ourwork .title {
+        width: 100%;
     }
 
     #ourwork .cards {
@@ -471,10 +513,6 @@ footer .author {
     }
 
     #services .cards {
-        width: 100%;
-    }
-
-    #ourwork .title {
         width: 100%;
     }
 
